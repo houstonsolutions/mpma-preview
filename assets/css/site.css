@@ -348,6 +348,14 @@ p:last-child { margin-bottom: 0; }
 .section--dark { background: var(--ink); color: rgba(255, 255, 255, 0.82); }
 .section-head { max-width: 52ch; margin-bottom: clamp(2rem, 4vw, 3rem); }
 .section-head--center { margin-inline: auto; text-align: center; }
+.section-head--center h2::after {
+  content: "";
+  display: block;
+  width: 82px;
+  height: 3px;
+  margin: var(--sp-2) auto 0;
+  background: var(--gold);
+}
 .section-head--split {
   max-width: none;
   display: flex;
